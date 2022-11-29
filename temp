@@ -1,0 +1,24 @@
+package temperature1;
+
+public class saikiran {
+
+	public static void main(String[] args) {
+		String source= args[0];
+		double value = Double.parseDouble(args[1]);
+		String target= args[2];
+		
+		
+		if(source.charAt(0)=='C'&target.charAt(0)=='K'){
+			double converted =value+273.15;
+			System.out.println(value +" "+ "Degree celsius is equal to "+ converted + "kelvin");	
+		}
+		else if(source.charAt(0)=='C'&target.charAt(0)=='F'){
+			double converted=(9/5)*value+32;
+			System.out.println(value + " "+"Degree celsius is equal to"+converted+"faranheit");
+			
+		}
+	     
+
+	}
+
+}
